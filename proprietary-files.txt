@@ -1,14 +1,14 @@
-# Unpinned blobs from pipa_global-user 13 RKQ1.211001.001 V816.0.7.0.UMZMIXM release-keys
+# Unpinned blobs from  pipa_global-user 14 UKQ1.240624.001 OS2.0.7.0.UMZMIXM release-keys
 
 # ACDB
-vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_General_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_General_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Global_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Handset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Hdmi_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Headset_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb:vendor/etc/acdbdata/Tutu/Tutu_Speaker_cal.acdb
-vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp:vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp
+vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP modules
@@ -101,28 +101,29 @@ vendor/lib64/com.qti.feature2.sr.so
 vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib64/libAF.so
-vendor/lib64/libI420colorconvert.so
+vendor/lib64/libFaceCenterAlgo.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libXMFaceFocus.so
-vendor/lib64/libalAILDC.so
+vendor/lib64/libalAILDC.so;DISABLE_CHECKELF
 vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so
-vendor/lib64/libalhLDC.so
+vendor/lib64/libalLDC.so;DISABLE_CHECKELF
+vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libarcsoft_beautyshot.so
+vendor/lib64/libarcsoft_dualcam_refocus.so
 vendor/lib64/libarcsoft_hdr_detection.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
+vendor/lib64/libarcsoft_low_light_hdr.so
+vendor/lib64/libarcsoft_mf_superresolution.so
 vendor/lib64/libarcsoft_portrait_lighting.so
 vendor/lib64/libarcsoft_portrait_lighting_c.so
 vendor/lib64/libarcsoft_qnnhtp.so
 vendor/lib64/libarcsoft_super_night_raw.so
+vendor/lib64/libbeauty_face_interface.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamera_scene.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcamlog.so
-vendor/lib64/libcapiv2svacnn.so
-vendor/lib64/libcapiv2svarnn.so
-vendor/lib64/libcapiv2vop.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcvp2.so
@@ -130,15 +131,14 @@ vendor/lib64/libcvp2_hfi.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/libdualcam_optical_zoom_control.so
-vendor/lib64/libhdrdynamic.so
-vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libipebpsstriping.so
-vendor/lib64/libmiai_portraitsupernight.so
+vendor/lib64/libmi_supernight_raw.so
+vendor/lib64/libmiai_portraitsupernight.so;DISABLE_CHECKELF
 vendor/lib64/libmialgo_ie_capture.so
-vendor/lib64/libmialgo_rfs.so
+vendor/lib64/libmialgo_rfs.so;DISABLE_CHECKELF
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
-vendor/lib64/libmialgoengine.so
+vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF
 vendor/lib64/libmibokeh_855.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
@@ -146,6 +146,7 @@ vendor/lib64/libmpbase.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libos.so
+vendor/lib64/librawnrv2_shared.so
 vendor/lib64/libsnpe_adsp.so
 vendor/lib64/libsnpe_dsp_domains.so
 vendor/lib64/libsnpe_dsp_domains_system.so
@@ -167,19 +168,16 @@ vendor/lib64/libthreadutils.so
 vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvidhance.so
+vendor/lib64/libvidhance_active_ois.so
+vendor/lib64/libvidhance_face_stabilizer.so
+vendor/lib64/libvidhance_horizon_correction.so
+vendor/lib64/libvidhance_ldc.so
+vendor/lib64/libvidhance_stabilizer.so
+vendor/lib64/libvidhance_super_stabilization.so
+vendor/lib64/libxml2_vendor.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera (CamX)
-vendor/lib/libcamxexternalformatutils.so
-vendor/lib/libcamxfacialfeatures.so
-vendor/lib/libcamxfdalgo.so
-vendor/lib/libcamxfdengine.so
-vendor/lib/libcamxifestriping.so
-vendor/lib/libcamximageformatutils.so
-vendor/lib/libcamxncs.so
-vendor/lib/libcamxstatscore.so
-vendor/lib/libcamxswprocessalgo.so
-vendor/lib/libcamxtintlessalgo.so
 vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libcamxfacialfeatures.so
 vendor/lib64/libcamxfdalgo.so
@@ -241,6 +239,26 @@ vendor/etc/camera/facefocus_models/facedet_front.dlc
 vendor/etc/camera/facefocus_models/facedet_full.dlc
 vendor/etc/camera/facefocus_models/facedet_part.dlc
 vendor/etc/camera/facefocus_models/facevalid.dlc
+vendor/etc/camera/102_SummerDay.png
+vendor/etc/camera/103_Fantasy.png
+vendor/etc/camera/104_Meet.png
+vendor/etc/camera/105_WindSing.png
+vendor/etc/camera/106_Lost.png
+vendor/etc/camera/107_Central.png
+vendor/etc/camera/108_NorthernEurope.png
+vendor/etc/camera/109_Rome.png
+vendor/etc/camera/110_BlackGold.png
+vendor/etc/camera/111_GreenOrange.png
+vendor/etc/camera/112_CyberPunk.png
+vendor/etc/camera/113_BlackIce.png
+vendor/etc/camera/121_Bleach.png
+vendor/etc/camera/122_Thriller.png
+vendor/etc/camera/123_TealOrange.png
+vendor/etc/camera/124_JapaneseStyle.png
+vendor/etc/camera/125_Latin.png
+vendor/etc/camera/126_Fantasy2.png
+vendor/etc/camera/127_Creamy.png
+vendor/etc/camera/128_Sepia.png
 vendor/etc/camera/CFR_para_W_V01.bin
 vendor/etc/camera/CFR_para_config.xml
 vendor/etc/camera/GpuKernelRepo.pb
@@ -298,6 +316,10 @@ vendor/etc/init/init.batterysecret.rc
 vendor/etc/qdcm_calib_data_xiaomi_m82_36_02_0a_video_mode_dual_dsi_dphy_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_m82_42_02_0b_video_mode_dual_dsi_dphy_panel.xml
 
+# Display config
+product/etc/displayconfig/display_id_4630946808805831297.xml:vendor/etc/displayconfig/display_id_4630946808805831297.xml
+product/etc/displayconfig/display_id_4630946922172900481.xml:vendor/etc/displayconfig/display_id_4630946922172900481.xml
+
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk;PRESIGNED
 -product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk;PRESIGNED
@@ -322,9 +344,6 @@ vendor/firmware/ipa_uc.mdt
 # Sensor calibrate
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
-vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
-vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
@@ -386,14 +405,6 @@ vendor/bin/sscrpcd
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/lib/libsensorcal.so
-vendor/lib/libsensorslog.so
-vendor/lib/libssc.so
-vendor/lib/libssc_default_listener.so
-vendor/lib/libssccalapi.so
-vendor/lib/libultrasound.so
-vendor/lib/sensors.mius.proximity.so
-vendor/lib/sensors.ssc.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libssc.so

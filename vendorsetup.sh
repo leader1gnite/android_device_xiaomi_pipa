@@ -20,48 +20,6 @@ divider() { echo -e "${BOLD}─────────────────�
 ROOT_DIR=$(pwd)
 
 # ──────────────────────────────────────────────────────────────
-# Apply Recovery Patch (non-fatal warning only)
-# ──────────────────────────────────────────────────────────────
-apply_recovery_patch() {
-    local root_dir
-    root_dir=$(pwd)
-    local target_dir="bootable/recovery"
-    local patch_file="$root_dir/device/xiaomi/pipa/patches/atomic-recovery.diff"
-    local temp_patch="/tmp/atomic-recovery.patch"
-
-    info "Attempting to apply recovery patch..."
-
-    if [ ! -f "$patch_file" ]; then
-        warn "Patch file not found, skipping: $patch_file"
-        return
-    fi
-
-    if ! cd "$target_dir"; then
-        warn "Could not enter $target_dir, skipping patch."
-        return
-    fi
-    
-    tr -d '\r' < "$patch_file" > "$temp_patch"
-
-    if git apply --check --ignore-whitespace "$temp_patch" >/dev/null 2>&1; then
-        if git apply --ignore-whitespace "$temp_patch" >/dev/null 2>&1; then
-            git add .
-            git commit -m "Apply recovery patch: $(sha1sum "$temp_patch" | awk '{print $1}')" -q || true
-            success "Recovery patch applied successfully."
-        else
-            warn "Recovery patch failed to apply cleanly; skipping."
-            git reset --hard HEAD >/dev/null 2>&1 || true
-            git clean -fd >/dev/null 2>&1 || true
-        fi
-    else
-        warn "Recovery patch is already applied or not applicable; skipping."
-    fi
-
-    rm -f "$temp_patch"
-    cd "$root_dir"
-}
-
-# ──────────────────────────────────────────────────────────────
 # Apply Tablet FW Patch (git apply; no git am)
 # ──────────────────────────────────────────────────────────────
 apply_tablet_patch() {
@@ -109,7 +67,6 @@ apply_tablet_patch() {
 DEVICE_PATH="${ROOT_DIR}/device/xiaomi/pipa"
 mkdir -p "$DEVICE_PATH/patches"
 
-apply_recovery_patch
 apply_tablet_patch
 
 echo "-------------------------------------"
